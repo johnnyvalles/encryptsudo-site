@@ -1,0 +1,124 @@
+/* ****************************************************************** */
+/* UTILITIES */
+/* ****************************************************************** */
+:root {
+    --lightblue: lightblue;
+    --mainblue: #007BFF;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.bg-red {
+    background: var(--mainblue);
+}
+
+.bg-lightblue {
+    background: var(--lightblue);
+}
+
+a, a:hover {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.cover {
+    background: no-repeat center/cover;
+}
+/* ****************************************************************** */
+
+/* ****************************************************************** */
+/* PARTICLES JS */
+/* ****************************************************************** */
+#particles-js {
+    z-index: 10; 
+    width: 100%; 
+    height: 100%;
+}
+/* ****************************************************************** */
+
+
+/* ****************************************************************** */
+/* HEADER & MAIN NAVBAR */
+/* ****************************************************************** */
+#navbarNav .nav-link {
+    color: white;
+}
+
+.page-header .navbar {
+    padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+    border-color: var(--white);
+}
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+}
+/* ****************************************************************** */
+
+
+/* ****************************************************************** */
+/*  HERO / LANDING */
+/* ****************************************************************** */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero {
+    background-image: url("https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero .container-fluid {
+    z-index: 10;
+}
+/* ****************************************************************** */
+
+
+/* ****************************************************************** */
+/* PARTNER SECTION */
+/* ****************************************************************** */
+#partners {
+    background: #F8F8F8;
+}
+
+.partner-icon {
+    color: #8A8C98;
+    transition: color 0.3s ease-in-out;
+}
+
+.partner-icon:hover {
+    color: rgb(58, 58, 58);
+}
+/* ****************************************************************** */
+
+
+/* ****************************************************************** */
+/* MEDIA QUERIES */
+/* ****************************************************************** */
+@media screen and (max-width: 991px) {
+    .page-header {
+        background: var(--mainblue);
+    }
+    #motto {
+        font-size: 3rem;
+    }
+}
+/* ****************************************************************** */
