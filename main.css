@@ -120,5 +120,9 @@ a:hover {
     #motto {
         font-size: 3rem;
     }
+
+    .hero {
+        background-attachment: initial;
+    }
 }
 /* ****************************************************************** */
