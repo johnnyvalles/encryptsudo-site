@@ -2,20 +2,11 @@
 /* UTILITIES */
 /* ****************************************************************** */
 :root {
-    --lightblue: lightblue;
-    --mainblue: #007BFF;
+    --darknav: #353b48;
 }
 
 body {
     font-family: 'Noto Sans HK', sans-serif;
-}
-
-.bg-red {
-    background: var(--mainblue);
-}
-
-.bg-lightblue {
-    background: var(--lightblue);
 }
 
 a, a:hover {
@@ -32,6 +23,11 @@ a:hover {
 
 .cover {
     background: no-repeat center/cover;
+}
+
+#navbar-container.scrolled {
+    background: var(--darknav);
+    transition: background 500ms;
 }
 /* ****************************************************************** */
 
@@ -115,7 +111,7 @@ a:hover {
 /* ****************************************************************** */
 @media screen and (max-width: 991px) {
     .page-header {
-        background: var(--mainblue);
+        background: var(--darknav);
     }
     #motto {
         font-size: 3rem;
